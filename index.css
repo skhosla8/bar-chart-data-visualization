@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  font-family: Helvetica;
+  overflow-x: hidden;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: darkslategrey;
+}
+
+#bar-chart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+  height: auto;
+  background-color: aqua;
+}
+
+#svg-container {
+  position: relative;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 20px 30px 60px;
+}
+
+svg {
+  display: block;
+}
+
+#source-container {
+  background-color: darkslategrey;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+#more-info {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.axis {
+  font-size: 0.8rem;
+}
+
+#x-axis path {
+  stroke: #000;
+  stroke-width: 1;
+  fill: none;
+}
+
+#y-axis path {
+  stroke: #000;
+  stroke-width: 1;
+  fill: none;
+}
+
+#tooltip {
+  background-color: rgba(83, 2, 1, 0.9);
+  color: #fff;
+  font-size: 1.3vw;
+  text-align: center;
+  line-height: 1.8vw;
+  padding: 0.3vw 1vw;
+  white-space: nowrap;
+  pointer-events: none;
+}
